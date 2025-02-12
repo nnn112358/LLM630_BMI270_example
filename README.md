@@ -99,5 +99,39 @@ root@m5stack-kit# pip install bmi270
 root@m5stack-kit# python3 LLM630_bmi270_read.py
 ```
 
+## Result
+```
+LM630_bmi270_read.pyt/usr/250212_test/bmi270_python-main/examples# python LLM630_bmi270_read.py
+---- I2C BUS FOUND ----
+0x68  --> Chip ID: 0x24
+0x68  --> Initialization already done
+0x68  --> Initialization status: 00000001       (00000001 --> OK)
+0x68  --> Mode set to: PERFORMANCE_MODE
+0x68  --> ACC range set to: 2G
+0x68  --> GYR range set to: 1000
+0x68  --> ACC ODR set to: 200
+0x68  --> GYR ODR set to: 200
+0x68  --> ACC BWP set to: OSR4
+0x68  --> GYR BWP set to: OSR4
+0x68  --> FIFO Header disabled (ODR of all enabled sensors need to be identical)
+0x68  --> Streaming Mode enabled (no data will be stored in FIFO)
+0x68  --> Accelerometer filter performance enabled (performance optimized)
+0x68  --> Gyroscope noise performance enabled (performance optimized)
+0x68  --> Gyroscope filter performance enabled (performance optimized)
+BMI270 Sensor Data Monitor
+====================================================================================================
+Press Ctrl+C to exit
 
+Time:    102ms | Acc: X=-263.000 Y=-343.000 Z=-16342.000 | Gyr: X=    4.00 Y=    5.00 Z=    0.00
+Sampling rate: 200.0 Hz
 
+Time:    222ms | Acc: X=-240.000 Y=-344.000 Z=-16345.000 | Gyr: X=    2.00 Y=    9.00 Z=    1.00
+Time:    332ms | Acc: X=-215.000 Y=-339.000 Z=-16372.000 | Gyr: X=    1.00 Y=    7.00 Z=    0.00
+Time:    442ms | Acc: X=-240.000 Y=-318.000 Z=-16359.000 | Gyr: X=    1.00 Y=    5.00 Z=    0.00
+Time:    552ms | Acc: X=-226.000 Y=-355.000 Z=-16353.000 | Gyr: X=    4.00 Y=    7.00 Z=    0.00
+Time:    662ms | Acc: X=-218.000 Y=-355.000 Z=-16355.000 | Gyr: X=    2.00 Y=    5.00 Z=    0.00
+Time:    772ms | Acc: X=-249.000 Y=-347.000 Z=-16358.000 | Gyr: X=    4.00 Y=    8.00 Z=    1.00
+Time:    882ms | Acc: X=-245.000 Y=-358.000 Z=-16356.000 | Gyr: X=    2.00 Y=    9.00 Z=    1.00
+Time:    992ms | Acc: X=-261.000 Y=-368.000 Z=-16377.000 | Gyr: X=    1.00 Y=    8.00 Z=    0.00
+Time:   1102ms | Acc: X=-262.000 Y=-361.000 Z=-16375.000 | Gyr: X=    3.00 Y=    5.00 Z=    1.00
+```
