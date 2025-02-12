@@ -34,14 +34,18 @@ root@m5stack-kit# i2cdetect -y -r 1
 60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
- * 0x14 - GT911: Goodixのタッチスクリーンコントローラ
  * 0x36 - AW99703: LEDバックライトドライバー
  * 0x43 - PI4IOE5V6408: I/O Expander
  * 0x47 - SGM7220: USB Type-C PDコントローラ
- * 0x55 - BQ27220: バッテリー管理IC
+ * 0x49 - ????
  * 0x68 - BMI270: 6軸IMUセンサー（IMU）
 
+0x36と0x43と0x47は"UU"と表示されており、カーネルドライバによって既に使用中であることを示しています
+
 ```
+root@m5stack-kit# ls /sys/bus/i2c/devices/
+1-0014  1-0036  1-0043  1-0047  1-0055  1-0068  i2c-0  i2c-1
+
 root@m5stack-kit# cat /sys/bus/i2c/devices/1-0014/name
 OF_NAME=gt911
 OF_FULLNAME=/soc/i2c@4851000/gt911@14
