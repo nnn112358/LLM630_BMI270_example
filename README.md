@@ -34,7 +34,12 @@ root@m5stack-kit# i2cdetect -y -r 1
 60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
-
+ * 0x14 - GT911: Goodixのタッチスクリーンコントローラ
+ * 0x36 - AW99703: LEDバックライトドライバー
+ * 0x43 - PI4IOE5V6408: I/O Expander
+ * 0x47 - SGM7220: USB Type-C PDコントローラ
+ * 0x55 - BQ27220: バッテリー管理IC
+ * 0x68 - BMI270: 6軸IMUセンサー（IMU）
 
 ```
 root@m5stack-kit# cat /sys/bus/i2c/devices/1-0014/name
@@ -85,12 +90,7 @@ OF_COMPATIBLE_N=1
 MODALIAS=of:NimuT<NULL>Cbosch,bmi270
 ```
 
- * 0x14 - GT911: Goodixのタッチスクリーンコントローラ
- * 0x36 - AW99703: LEDバックライトドライバー
- * 0x43 - PI4IOE5V6408: I/O Expander
- * 0x47 - SGM7220: USB Type-C PDコントローラ
- * 0x55 - BQ27220: バッテリー管理IC
- * 0x68 - BMI270: 6軸IMUセンサー（IMU）
+
 
 ## bmi270 run
 
