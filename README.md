@@ -81,11 +81,13 @@ root@m5stack-kit# i2cdetect -y -r 1
 60: -- -- -- -- -- -- -- -- 68 -- -- -- -- -- -- --
 70: -- -- -- -- -- -- -- --
 ```
- * 0x36 - AW99703: LEDバックライトドライバー
+* 0x36 - AW99703: LED backlight driver
  * 0x43 - PI4IOE5V6408: I/O Expander
- * 0x47 - SGM7220: USB Type-C PDコントローラ
+ * 0x47 - SGM7220: USB Type-C PD controller
  * 0x49 - ????
- * 0x68 - BMI270: 6軸IMUセンサー（IMU）
+ * 0x68 - BMI270: 6-axis IMU sensor (IMU)
+
+
 
 0x36と0x43と0x47は"UU"と表示されており、カーネルドライバによって既に使用中であることを示しています
 
