@@ -84,7 +84,7 @@ root@m5stack-kit# i2cdetect -y -r 1
 * 0x36 - AW99703: LED backlight driver
  * 0x43 - PI4IOE5V6408: I/O Expander
  * 0x47 - SGM7220: USB Type-C PD controller
- * 0x49 - ????
+ * 0x49 - BQ27220YZFR
  * 0x68 - BMI270: 6-axis IMU sensor (IMU)
 
 
