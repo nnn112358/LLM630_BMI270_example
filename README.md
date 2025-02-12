@@ -1,5 +1,7 @@
 # LLM630_BMI270_example
 
+
+## I2C Investivate
 I2C Grove is Red Port(No.03).
 ![image](https://github.com/user-attachments/assets/0b3e7e02-a303-43d3-868a-7b675222b0e7)
 
@@ -88,9 +90,14 @@ MODALIAS=of:NimuT<NULL>Cbosch,bmi270
  * 0x43 - PI4IOE5V6408: I/O Expander
  * 0x47 - SGM7220: USB Type-C PDコントローラ
  * 0x55 - BQ27220: バッテリー管理IC
- * 0x68 - BMI270: 6軸IMUセンサー（お探しのデバイス）
+ * 0x68 - BMI270: 6軸IMUセンサー（IMU）
 
+## bmi270 run
 
+```
+root@m5stack-kit# pip install bmi270
+root@m5stack-kit# python3 LLM630_bmi270_read.py
+```
 
 
 
